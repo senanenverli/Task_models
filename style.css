@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 100px;
+}
+
+.youtube-logo {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: #ff0000;
+    position: relative;
+    border-radius: 17px;
+    margin: 100px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.container{
+
+    padding: 100px 80px;
+    margin: 100px;
+    
+}
+.leaf{
+    height: 50px;
+    width: 100px;
+    background-color: #f6b704;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+  
+.leaf::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 50px;
+    background-color: #e54335;
+    left: 100px;
+    top: -50px;
+    border-radius: 0 50px 50px 0;
+}
+  
+.mirror{
+    transform: rotateZ(180deg);
+    left: 100px;
+    background-color: #4280ef;
+}
+  
+.mirror::after{
+    
+    background-color: #34a353;
+}
